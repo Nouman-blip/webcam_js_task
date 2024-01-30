@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Webcam Capture and Recording</title>
+</head>
+<body>
+
+<h1>Webcam Capture and Recording</h1>
+<form id="webcamForm">
+  <!-- Button to open the webcam -->
+  <button type="button" id="captureButton">Open Webcam</button>
+  <!-- Button to start/stop recording -->
+  <button type="button" id="recordButton">Start Recording</button>
+  <!-- Button to stop the webcam -->
+  <button type="button" id="stopButton">Stop Webcam</button>
+  <!-- Button to pause the webcam stream -->
+  <button type="button" id="pauseButton">Pause</button>
+  <!-- Button to play the webcam stream -->
+  <button type="button" id="playButton">Play</button>
+</form>
+
+<!-- Video element to display the webcam stream -->
+<video id="webcamVideo" autoplay playsinline style="margin-top: 10px;"></video>
+
+<script src="openWebcam.js"></script>
+
+</body>
+</html>
